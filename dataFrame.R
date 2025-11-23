@@ -1,5 +1,5 @@
 # Farklı veri tiplerindeki dizileri birleştirir
-# fakat dizilerdeki veri tipleri, orijinal veri tipleri olarak kalır;
+# fakat matrislerdeki veri tipleri, orijinal veri tipleri olarak kalır;
 # verilerin veri tipleri değişmez.
 
 karakterVeriTipliArray <- c("Merhaba", "Dunya", "Ben", "Insanim")
@@ -12,3 +12,7 @@ birlestir
 benimFrame = data.frame(birlestir)
 benimFrame
 
+typeof(benimFrame)
+typeof(karakterVeriTipliArray)
+typeof(sayisalVeriTipliArry)
+typeof(mantiksalVeriTipliArray)
