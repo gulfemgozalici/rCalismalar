@@ -7,12 +7,16 @@ sayisalVeriTipliArry <- c(12, 13, 45, 46)
 mantiksalVeriTipliArray <- c(T, F, F, T)
 
 birlestir = cbind(karakterVeriTipliArray, sayisalVeriTipliArry, mantiksalVeriTipliArray)
-birlestir
+# birlestir
 
 benimFrame = data.frame(birlestir)
-benimFrame
+# benimFrame
 
-typeof(benimFrame)
-typeof(karakterVeriTipliArray)
-typeof(sayisalVeriTipliArry)
-typeof(mantiksalVeriTipliArray)
+# typeof(benimFrame)
+# typeof(karakterVeriTipliArray)
+# typeof(sayisalVeriTipliArry)
+# typeof(mantiksalVeriTipliArray)
+
+benimFrame$karakterVeriTipliArray = as.character(karakterVeriTipliArray)
+benimFrame$sayisalVeriTipliArry = as.numeric(sayisalVeriTipliArry)
+benimFrame$mantiksalVeriTipliArray = as.logical(mantiksalVeriTipliArray)
